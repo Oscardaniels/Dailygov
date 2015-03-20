@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
+ruby "2.1.1"
 
 gem 'rails', '4.1.0'
 
@@ -24,6 +24,10 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.3.3'
 
 gem "paperclip", "~> 4.2"
+
+gem "paperclip-dropbox", ">= 1.1.7"
+
+gem "figaro"
 
 gem "twitter-bootstrap-rails"
 
