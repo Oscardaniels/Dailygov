@@ -3,33 +3,38 @@
 @import "bootstrap";
 
 body {
-  background-color: #F5F5F1;
+  background-color: #FFFFFF;
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 2000px;
+  padding-top: 70px;
 }
 
 .navbar-default{
-   background-color: #EFEFEB; 
+   background-color: #FFFFFF; 
 }
 
 .navbar-default .navbar-brand{
   font-family: guardian-egypt, georgia, serif;
   font-weight: 400;
-  color: #d5641C;
+  //color: #d5641C;
+  color: #000000;
   font-size: 30px;
 }
 
 .navbar-default .navbar-nav >li > a {
-  font-family: Arial, Helvetica, sans-serif;
+  //font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
-  font-weight: bold;
-  color: #0192B5;
+  //font-weight: bold;
+  //color: #0192B5;
+  color: #7A7A7A;
 }
 
 .center{
   text-align: center;
 }
-.col-md-3:nth-child(4n+1){
+.col-md-4:nth-child(3n+1){
   clear: left;
 }
 
@@ -40,19 +45,47 @@ body {
 }
 
 .caption{
+  text-align: left;
   h3{font-size: 17px;
      margin: 2px;
+    font-weight: bold;    
     }
   p{
-    font-size: 15px;
+    font-size: 12px;
     margin: 0px;
   }
 }
 
 .jumbotron{
-  background-image: url('https://dl.dropboxusercontent.com/s/7ixs2h32ax12vw5/jumbotron.jpg?raw=1');
+  background-image: url('UNSUB1.jpg');
     h1, h2 {
     font-family: guardian-egyptt, georgia, serif;
+    visibility: hidden;
   }
   
+}
+
+.jumbotext{
+  text-align: left;
+  h3{font-size: 25px;
+     margin: 2px;
+    font-weight: bold;    
+    }
+  p{
+    font-size: 12px;
+    margin: 0px;
+  }
+}
+
+.thumbnail {
+  border: 1px solid #FFFFFF;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+  border-radius: 0px;
+}
+.jumbotron {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  margin-right: 23px;
+  margin-left: 23px;
 }

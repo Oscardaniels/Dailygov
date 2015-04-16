@@ -1,19 +1,31 @@
-<div class = "jumbotron">
-  <h1>Handcrafted items from <br>
-    around the world.</h1>
-  <h2>Discover one-of-a-kind items.</h2>
+<div class="row">
+  <div class="col-md-8">
+      <div class = "jumbotron">
+        <h1>Handcrafted items from <br>
+          around the world.</h1>
+        <h2>Discover one-of-a-kind items.</h2>
+      </div>
+  </div>
+  <div class="col-md-4 jumbotext">
+    <h3>FBI Searches for ISIL Commander With North American Accent</h3>
+    <p>The FBI is seeking information about the identity of an English-speaking individual seen in a propaganda video released in September of 2014 by the group calling itself the Islamic State of Iraq and the Levant, or ISIL.
+In the video, a man whose face is obscured by a mask alternates seamlessly between North-American-accented English and Arabic in pro-ISIL pronouncements intended to appeal to a Western audience.</p>
+  </div>
 </div>
+
+
 <div class="center">
   <div class="row">
     <% @listings.each do |listing| %>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="thumbnail">
           <%= link_to image_tag(listing.image.url), listing %>
    
           <div class="caption">
             <h3><%= listing.name %></h3>
-            <p><%= number_to_currency(listing.price) %></p>
+            <p><%= listing.description %></p>
             <p><%= "Sold by #{listing.user.name}" %></p>
+    
             
             
           </div>

@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
+  #I added this whole section from here up until devise_for :models and then commented that line below. 
+  devise_scope :user do
+  authenticated :user do
+    root 'listings#index', as: :authenticated_root
+  end
+
+  unauthenticated do
+    root 'devise/sessions#new', as: :unauthenticated_root
+  end
+end
   devise_for :models
   resources :listings
 
@@ -7,7 +17,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
   get 'seller' => "listings#seller"
   
-  root "listings#index"
+# root "listings#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
